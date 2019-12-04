@@ -1,6 +1,6 @@
 module "network" {
   source              = "app.terraform.io/TonyPulickal/network/azurerm"
-  vnet_name                = "${var.prefix}-vnet-tfe"
+  vnet_name           = "${var.prefix}-vnet-tfe"
   resource_group_name = "${var.prefix}-rg-tfe"
   location            = "${var.region}"
   address_space       = "172.16.0.0/16"
